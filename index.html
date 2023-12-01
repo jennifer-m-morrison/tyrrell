@@ -1,0 +1,265 @@
+<!--    Student Name: Jennifer Morrison
+        Date: November 30, 2023
+        Class: Web 125.0002
+        File Name: index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tyrrell County NC | Welcome Residents and Visitors </title>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32cecca525.js"
+            crossorigin="anonymous"></script>
+    <link href="css/tyrrell.css"
+          rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Responsive navbar-->
+        <nav class="navbar grid">
+            <a class="navbar-title flex-row"
+               href="index.html">
+                <img src="images/tyrrellco_seal150.png"
+                     alt="Tyrrell County Seal">
+                <div class="title-text desktop">
+                    <h2 class="header-script">Tyrrell County</h2>
+                    <h2>North Carolina</h2>
+                </div>
+            </a>
+
+            <ul class="menu navbar-links">
+                <li><a class="menuItem"
+                       href="index.html">Home</a></li>
+                <li><a class="menuItem"
+                       href="about.html">About</a></li>
+                <li><a class="menuItem"
+                       href="residents.html">Residents</a></li>
+                <li><a class="menuItem"
+                       href="departments.html">Departments</a></li>
+                <li><a class="menuItem"
+                       href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="menuIcon fa-solid fa-bars"></i>
+                <i class="closeIcon fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="navbar-secondary tab-desk">
+                <a href="https://www.facebook.com/"
+                   target="_blank">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/"
+                   target="_blank">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.twitter.com/"
+                   target="_blank">
+                    <i class="fa-brands fa-x-twitter fa-lg"></i>
+                </a>
+                <div class="search">
+                    <input type="text"
+                           class="searchBox"
+                           placeholder="I am looking for...">
+                    <button type="submit"
+                            class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section-->
+        <section class="grid hero">
+            <h1>Welcome to <br> Tyrrell County</h1>
+
+            <div class="hero-buttons flex-row">
+                <a href="residents.html"
+                   class="hero-btn">Residents</a>
+                <a href="visitors.html"
+                   class="hero-btn">Visitors</a>
+            </div>
+            <div class="hero-img">
+                <img src="images/tyrrell_hero.jpg"
+                     alt="sunset over coastal wetlands and large grassy marsh">
+            </div>
+            <p>Nestled between the urban mainland and the Outer Banks, Tyrrell County
+                is a "nature's
+                buffer zone" of tranquil beauty and diverse wildlife.</p>
+
+        </section>
+
+        <!-- Features Section with Icons-->
+        <section class="grid features">
+            <div class="features-container flex-row center">
+                <div class="features-card">
+                    <a href="residents.html">
+                        <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
+                        <h2>Make a <br>Payment</h2>
+                    </a>
+                </div>
+                <div class="features-card">
+                    <a href="departments.html">
+                        <i class="fa-regular fa-address-book fa-2xl"></i>
+                        <h2>County <br>Departments</h2>
+                    </a>
+                </div>
+                <div class="features-card">
+                    <a
+                       href="https://agdonline.maps.arcgis.com/apps/webappviewer/index.html?id=1c2493cb8eb1484eb1ecc571131f5ee6">
+                        <i class="fa-solid fa-location-dot fa-2xl"></i>
+                        <h2>GIS Maps</h2>
+                    </a>
+                </div>
+                <div class="features-card">
+                    <i class="fa-solid fa-laptop-file fa-2xl"></i>
+                    <h2>Forms & <br>Applications</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>County News & Calendar Events</h2>
+            <div class="news-section grid">
+                <div class="news-container">
+                    <div class="news-card">
+                        <div class="news-flex-col">
+                            <div class="news-flex-row">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Tyrrell Daily News</p>
+                            </div>
+                            <h4>$1 million winner in N.C. Education Lottery</h4>
+                            <p>Bob Franklin from Columbia bought his $1 million Powerball
+                                ticket
+                                from the local Duck Thru Food Store on U.S. 64 East in
+                                Columbia.</p>
+                            <div class="news-flex-row">
+                                <p>Columbia, NC</p>
+                                <p>6 days ago</p>
+                            </div>
+                            <img src="images/lottery300.jpg"
+                                 alt="hand holdling several lottery tickets">
+                            <a href="https://www.newsbreak.com/tyrrell-county-nc"
+                               class="center">Click for more local news</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-container">
+                    <h3 class="center">Local Events</h3>
+                    <div class="calendar-wrapper flex-row">
+                    <div class="calendar-card">
+                        <div class="calendar-col">
+                            <h3>Dec 2</h3>
+                            <div class="calendar-details">
+                                <h4>Tree Lighting Downtown</h4>
+                                <p>Community Center</p>
+                                <p>Columbia, NC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-card">
+                        <div class="calendar-col">
+                            <h3>Dec 10</h3>
+                            <div class="calendar-details">
+                                <h4>Sleigh Rides with Santa</h4>
+                                <p>Mill Creek County Farm</p>
+                                <p>Columbia, NC</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="#"
+                       class="center">* Full Calendar Coming Soon *</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="discover">
+            <h2>Discover Tyrrell County</h2>
+            <!-- First Section-->
+            <div class="d-container">
+                <iframe width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/FwQK_Gz1C7Q?si=cf6ZEXITDQImAEBd"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <div class="d-text">
+                    <p>Our county is a hidden gem with a rich history, scenic landscapes,
+                        and a tight-knit community. From the
+                        historic town of Columbia to the tranquil shores of the sound,
+                        Tyrrell County offers a
+                        unique blend of small-town warmth and outdoor adventures.</p>
+                    <p class="tab-desk"> Whether you're interested in
+                        birdwatching at the Pocosin Lakes National Wildlife Refuge,
+                        immersing yourself in local history at Somerset Place, or simply
+                        enjoying the peaceful surroundings, Tyrrell County has something
+                        for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section-->
+    <footer class="footer">
+        <div class="footer-wrapper grid">
+            <div class="footer-grid-item flex-col">
+                <p>Connect with us:</p>
+                <div class="footer-social flex-row">
+                    <a href="https://www.facebook.com/"
+                       target="_blank">
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/"
+                       target="_blank">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.twitter.com/"
+                       target="_blank">
+                        <i class="fa-brands fa-x-twitter fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-grid-item flex-row ">
+                <i class="fa-solid fa-house fa-lg tab-desk"></i>
+                <p>108 S. Water Street <br> Columbia, NC 27925<br>
+                    P. O. Box 449</p>
+            </div>
+            <div class="footer-grid-item flex-row">
+                <i class="fa-solid fa-envelope fa-lg tab-desk"></i>
+                <a href="mailto:tyrrellcountygov.com">
+                    tyrrellcountygov@gmail.com</a>
+            </div>
+
+            <div class="footer-grid-item">
+                <img src="images/nc-outline200.png"
+                     alt="outline of north carolina state">
+                <p>&copy; Copyright 2023. All Rights Reserved. </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>

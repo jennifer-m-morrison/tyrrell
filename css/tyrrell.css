@@ -1,0 +1,1208 @@
+/*  Student Name: Jennifer Morrison
+    Date: November 30, 2023
+    Class: Web125.0002
+    File Name: tyrrell.css */
+
+/*********** SITE FONT COLORS *************/
+
+:root {
+    --medblue: #245882;
+    --green: #476A2C;
+    --ltgrey: #ededed;
+    --medgrey: #d9dede;
+    --dkgrey: #93969A;
+    --dkdkgrey: #4f5155;
+    --white: #ffffff;
+}
+
+/************ CSS RESET STYLES ************/
+
+/* Box sizing to include padding and margin */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/************ GENERAL STYLES ************/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--ltgrey);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main h1 {
+    margin: 0.8em 0 0.5em;
+}
+
+p,
+li,
+label {
+    font-size: 1.1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.icon-background {
+    color: var(--dkdkgrey);
+}
+
+.features-card i,
+.navbar-secondary i {
+    color: var(--medblue);
+}
+
+i,
+.searchButton i {
+    color: var(--white);
+}
+
+/*************** MOBILE DISPLAY ***************/
+
+/* Tablet and Desktop content only */
+.tab-desk,
+.desktop {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+/* General Styling for Flex containers */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.flex-col p {
+    margin-bottom: 1.5em;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Mobile Header and Navigation Styles */
+.navbar img {
+    margin: 0 2em 1em;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    position: absolute;
+    z-index: 10;
+    top: 1.5em;
+    right: 1.5em;
+    padding: 0.7em;
+    font-size: 1.2rem;
+    background: var(--medblue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+}
+
+/* Main Navigation Links Styles */
+.menu {
+    background: var(--medblue);
+    list-style: none;
+    padding: 2em 1em;
+    line-height: 1.7;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.menu li a:visited,
+.menu li a,
+footer a,
+.hero-btn,
+.btn {
+    color: white;
+    text-decoration: none;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+/* Home Page - Hero Section Styles */
+.hero {
+    margin: 0 1.5rem;
+}
+
+.hero-buttons,
+.dept-buttons {
+    margin-bottom: 1em;
+}
+
+.hero-btn,
+.btn {
+    border: none;
+    background-color: var(--medblue);
+    border-radius: 15px;
+    font-size: 1rem;
+    color: white;
+    padding: 0.8em 1.3em;
+    text-align: center;
+    /* display: inline-block; */
+    /* cursor: pointer; */
+}
+
+.hero-btn {
+    width: 7.5em;
+}
+
+.hero img {
+    margin-bottom: 1em;
+}
+
+/* Home Page Features Section Styles */
+
+.features-container h2,
+.payments-container h2,
+.resources-container h2 {
+    font-size: 1.3rem;
+}
+
+.features-container {
+    gap: 30px;
+    margin-top: 2em;
+}
+
+.features-container>* {
+    flex: 0 0 100%;
+}
+
+
+.features-card a,
+.features-card a:visited {
+    color: var(--medblue);
+}
+
+/* Home Page News Section Styles */
+
+.news {
+    background-color: var(--medblue);
+    color: white;
+    padding: 1.5em 0 1.5em;
+}
+
+.news-container {
+    margin: 0 0 1.5em;
+}
+
+.news-card a,
+.news-card a:visited,
+.calendar-container a,
+.calendar-container a:visited {
+    color: white;
+}
+
+.news-card {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.news-card h3,
+.news-card h4 {
+    margin: 0;
+}
+
+.news-card p {
+    font-size: 0.8em;
+}
+
+.news-card img {
+    justify-self: center;
+}
+
+.news-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.news-flex-row {
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+
+/* Home Page: Calendar Section */
+
+.calendar-container {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.calendar-card {
+    border: 2px solid white;
+    width: 80%;
+    margin: 1em auto;
+    padding-bottom: 0.7em;
+    gap: 20px;
+}
+
+.calendar-card h3 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0.7em 0;
+}
+
+.calendar-card p {
+    font-size: 0.8rem;
+}
+
+.calendar-details {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Home Page: Discover Section */
+
+.discover {
+    padding: 2em 0.75em;
+}
+
+.discover iframe {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1em;
+}
+
+/* About and Contact Page Padding and Margin Styles */
+.about-wrapper {
+    background-color: var(--ltgrey);
+    padding: 1.5em 0;
+}
+
+.about-wrapper h1 {
+    margin-top: 0;
+}
+
+.about,
+.contact-wrapper,
+.wildlife {
+    padding: 0 0.75em;
+}
+
+/* Contact Page - Styles for form elements */
+.contact h1 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-wrapper>* {
+    margin-bottom: 2em;
+}
+
+.contact-wrapper :first-child {
+    max-width: 100%;
+}
+
+.map {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid var(--dkgrey);
+    margin-bottom: 1em;
+}
+
+.contact-details {
+    margin-left: 1em;
+}
+
+
+/* Form Styles */
+.form {
+    margin: 0 1em 1em;
+}
+
+.form .btn {
+    background-color: var(--dkdkgrey);
+}
+
+.form h3 {
+    margin-bottom: 1em;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 90%;
+    margin-bottom: 1.5em;
+    font-size: 1.1rem;
+}
+
+/* Residents Page Styles */
+.payments,
+.payments a,
+.payments h3 {
+    background-color: var(--medblue);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.payments {
+    padding: 1em;
+}
+
+.payments i {
+    font-size: 1.5rem;
+}
+
+.resources-card a,
+.resources-card a:visited {
+    color: black;
+}
+
+
+
+/* Departments Page Styles */
+.dept-buttons {
+    flex-wrap: wrap;
+}
+
+.dept-buttons .btn {
+    background-color: var(--dkdkgrey);
+}
+
+.dept-buttons>* {
+    flex-basis: 60%;
+}
+
+/* Visitors Page Styles */
+.wildlife,
+.wildlife a {
+    background-color: var(--medblue);
+    color: white;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--medblue);
+    color: var(--white);
+    padding: 2em;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer p,
+footer a {
+    font-size: 0.9rem;
+}
+
+footer .fa-lg {
+    font-size: 2rem;
+}
+
+footer img {
+    margin: 0 auto;
+}
+
+
+/*************** TABLET DISPLAY ***************/
+
+@media (min-width: 700px) {
+
+    /* Remove mobile content and display tablet-desktop content that was hidden on mobile displays */
+    .hamburger,
+    .mobile {
+        display: none;
+    }
+
+    .tab-desk {
+        display: block;
+    }
+
+    /* Add grid display */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    main h1 {
+        margin: 1.5em 0 1em;
+    }
+
+    /* Tablet - Navigation Styles */
+    .navbar {
+        grid-template-rows: 1.2fr 1fr;
+        color: var(--white);
+        height: 30vh;
+    }
+
+    .menu {
+        position: relative;
+        transform: translateY(0);
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 1.5em;
+        list-style: none;
+        gap: 2em;
+        padding: 0 0.75em;
+    }
+
+    .navbar-title {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 11;
+    }
+
+    .navbar-title img {
+        margin: 0 1em 1em 2.7em;
+        z-index: 11;
+        width: 60%;
+    }
+
+    .navbar-secondary {
+        grid-column: 6 / 13;
+        grid-row: 2;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: var(--medblue);
+        gap: 1em;
+    }
+
+    .search {
+        margin-right: 1em;
+        display: flex;
+    }
+
+    .searchBox {
+        border: 3px solid var(--medblue);
+        border-right: none;
+        padding: 1em;
+        width: 250px;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+
+    .searchButton {
+        width: 3em;
+        height: 40px;
+        background: var(--medblue);
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    /* Tablet: Home Page - Hero Styles */
+    .hero {
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        height: 65vh;
+        grid-template-rows: 40% 40% 20%;
+    }
+
+    .hero> :nth-child(1) {
+        grid-column: 1 / span 6;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    .hero> :nth-child(2) {
+        grid-column: 1 / span 6;
+        grid-row: 3;
+    }
+
+    .hero> :nth-child(3) {
+        grid-column: span 6;
+        grid-row: 1 / span 3;
+    }
+
+    .hero> :nth-child(4) {
+        /* padding: 2em 1em 0; */
+        grid-column: 2 / span 4;
+        grid-row: 2;
+    }
+
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+
+    }
+
+    .hero p {
+        color: white;
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        margin-bottom: 0;
+    }
+
+    .hero-btn {
+        font-size: 1.1rem;
+        padding: 0.6em .9em;
+        margin: 0;
+    }
+
+    /* Tablet Home Page: Features Section styles */
+    .features-container,
+    .payments-container,
+    .resources-container {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 0.7em;
+    }
+
+    .features-container h2,
+    .payments-container h2,
+    .resources-container h2 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .features-container,
+    .resources-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 2em 0;
+    }
+
+    .features>*,
+    .resources>* {
+        grid-column: span 12;
+    }
+
+    .features-container>* {
+        flex: 0 0 auto;
+    }
+
+    /* Tablet: Home Page - News Section */
+
+    .news h2 {
+        margin-bottom: 2em;
+    }
+
+    .news-section>* {
+        grid-column: span 6;
+    }
+
+    .news-container {
+        margin: 0;
+    }
+
+    .news-container img {
+        display: inline-block;
+        margin: 0 auto;
+
+    }
+
+    .news-flex-col {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .calendar-container {
+        padding: 0;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .calendar-container h4 {
+        margin: 0.7em 0;
+    }
+
+    /* Tablet: Home Page - Discover Section */
+    .discover {
+        padding: 2em 4em;
+    }
+
+    .discover iframe {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 1em;
+    }
+
+    .discover p {
+        margin-bottom: 1em;
+    }
+
+
+    /* Tablet: About Page Styles */
+    .about {
+        row-gap: 2em;
+        font-size: 1.2em;
+        line-height: 1.7;
+        padding: 0;
+    }
+
+    .about> :first-child {
+        grid-column: 3 / span 4;
+    }
+
+    .about> :nth-child(2) {
+        margin-left: 1.5em;
+        grid-column: 7 / span 4;
+        /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+    }
+
+    .about> :nth-child(3) {
+        grid-column: 7 / span 4;
+        grid-row: 2;
+    }
+
+    .about> :nth-child(4) {
+        margin-right: 1.5em;
+        grid-column: 3 / span 4;
+        grid-row: 2;
+    }
+
+    .about> :nth-child(5) {
+        grid-column: 3 / span 4;
+    }
+
+    .about> :nth-child(6) {
+        margin-left: 1.5em;
+        grid-column: 7 / span 4;
+    }
+
+    /* Tablet: Contact Page Styles */
+
+    .contact-wrapper :first-child {
+        grid-column: 3 / span 4;
+        width: 100%;
+    }
+
+    .contact-wrapper :last-child {
+        grid-column: 7 / span 4;
+        padding-left: 1em;
+    }
+
+    .form>* {
+        grid-column: 3 / -3;
+    }
+
+    label,
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .form-grid {
+        display: grid;
+        grid: inherit;
+        grid-template-columns: max-content 1fr;
+        gap: 1.5em;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+
+    .field {
+        display: grid;
+        grid-column: span 2;
+        grid: inherit;
+        gap: inherit;
+    }
+
+    /* Tablet: Departments Page Styles */
+
+    .table {
+        grid-column: span 12;
+        margin-bottom: 2em;
+        border-collapse: collapse;
+        /* width: 100%; */
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid #ddd;
+        padding: 0.5em;
+    }
+
+    .table th {
+        padding: 0.75em 0;
+        text-align: center;
+        background-color: var(--medblue);
+        color: white;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table tr:hover {
+        background-color: #ddd;
+    }
+
+    .dept tr> :last-child {
+        display: none;
+    }
+
+    .dept-buttons {
+        grid-column: 3 / span 8;
+    }
+
+    .dept-buttons>* {
+        flex-basis: 32%;
+    }
+
+    .committees> :nth-child(2) {
+        grid-column: span 12;
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+
+    .elections> :first-child {
+        grid-column: 3/ span 3;
+    }
+
+    .elections> :nth-child(2) {
+        grid-column: 7 / span 5;
+        align-self: center;
+    }
+
+    /*Tablet: Residents Page Styles */
+    .payments,
+    .resources,
+    .register {
+        padding: 2em 0;
+    }
+
+    .payments>*,
+    .resources>* {
+        grid-column: 3 / span 8;
+    }
+
+    .payments-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .payments-card i {
+        font-size: 4rem;
+        margin: 0.85em 0;
+    }
+
+    .resources {
+        background-color: var(--medgrey);
+    }
+
+    .resources-container {
+        margin-top: 0;
+
+    }
+
+
+    /* Tablet: Visitors Page Styles */
+    .wildlife,
+    .places {
+        padding: 1.5em 0;
+    }
+
+    .wildlife>* {
+        grid-column: 2 / span 10;
+    }
+
+    .places>* {
+        grid-column: 2 / span 10;
+    }
+
+    .wildlife-card img,
+    .wildlife-card h3,
+    .places-card img {
+        padding-bottom: 1rem;
+    }
+
+    .places-card {
+        justify-content: space-between;
+    }
+
+    .visitors-container {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .visitors-container>* {
+        flex-basis: 100%;
+    }
+
+
+    /* Tablet: Footer Styles */
+    .footer-wrapper {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footer-wrapper> :nth-child(1) {
+        grid-column: 2 / span 4;
+        grid-row: 1;
+    }
+
+    .footer-wrapper> :nth-child(2) {
+        grid-column: 7 / span 6;
+        grid-row: 1;
+    }
+
+    .footer-wrapper> :nth-child(3) {
+        grid-column: 7 / span 6;
+        grid-row: 2;
+    }
+
+    .footer-wrapper> :nth-child(4) {
+        width: 100%;
+        grid-column: 2 / span 4;
+        grid-row: 2;
+
+    }
+}
+
+/*************** DESKTOP  DISPLAY ***************/
+
+@media (min-width:970px) {
+
+    /* Add content for desktop display */
+    .desktop {
+        display: block;
+    }
+
+    main {
+        padding-top: 1.5rem;
+    }
+
+    /* Desktop: Navigation Styles */
+
+    .title-text h2 {
+        color: var(--medblue);
+        padding: 0;
+        margin: 0;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+    }
+
+    .header-script {
+        font-size: 2rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    .navbar {
+        grid-template-rows: 1.2fr 1fr;
+        height: 20vh;
+    }
+
+    .navbar-title img {
+        margin: 0 0.5em 1em 2.7em;
+        width: auto;
+    }
+
+    .navbar-links {
+        background-color: var(--ltgrey);
+        color: var(--medblue);
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+    }
+
+    .flex-row {
+        flex-wrap: nowrap;
+    }
+
+    .menu li a:visited,
+    .menu li a,
+    .navbar-title,
+    .navbar-title:visited {
+        color: var(--medblue);
+        text-decoration: none;
+        gap: 0;
+    }
+
+    .navbar-secondary {
+        color: var(--medblue);
+
+    }
+
+    .hero {
+        background-color: black;
+        text-align: center;
+        grid-template-rows: 40% 35% 25%;
+    }
+
+
+    .hero> :nth-child(4) {
+        margin-top: 1.05em;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        padding: 0;
+    }
+
+    /* Desktop: Home Page - News Section */
+
+    .news-container img {
+        width: 70%;
+    }
+
+    .calendar-wrapper {
+        margin-bottom: 2em;
+    }
+
+    .calendar-wrapper > * {
+        flex-basis: 100%;
+    }
+
+
+    /* Desktop: Home Page - Discover Section */
+    .d-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .discover iframe {
+        flex: 0 0 35%;
+    }
+
+    .discover p {
+        flex: 0 0 40%;
+    }
+
+    /* Desktop: About Page Styles */
+    .about-wrapper {
+        margin-top: 2em;
+    }
+
+    .about-wrapper h1 {
+        margin-bottom: 2em;
+    }
+
+    .about {
+        row-gap: 3em;
+    }
+
+    .about> :nth-child(2) {
+        width: 75%;
+        justify-self: center;
+        grid-column: 7 / span 4;
+    }
+
+    .about> :nth-child(4) {
+        width: 70%;
+        grid-column: 3 / span 5;
+        margin: 0;
+        grid-row: 2;
+    }
+
+    .about> :nth-child(3) {
+        grid-column: 7 / span 4;
+        grid-row: 2;
+    }
+
+    /* Desktop: Contact Page Styles */
+    .contact-wrapper :first-child {
+        grid-column: 4 / span 3;
+    }
+
+    .contact-wrapper :last-child {
+        grid-column: 7 / span 4;
+        padding-left: 1em;
+    }
+
+    .form>* {
+        grid-column: 4 / -4;
+    }
+
+    /* Desktop: Committees and Elections Page Styles */
+    .committees,
+    .elections {
+        gap: 1em;
+        margin: 1.5em 0;
+    }
+
+    .committees> :first-child {
+        grid-column: 2 / span 3;
+    }
+
+    .committees> :nth-child(2) {
+        grid-column: 5 / span 7;
+    }
+
+    /* Desktop: Departments Page Styles */
+    .table {
+        grid-column: 2 / span 10;
+    }
+
+    .dept-buttons>* {
+        flex-basis: 20%;
+    }
+
+    /* Desktop: Visitors Page Styles */
+    .wildlife>* {
+        grid-column: 3 / span 8;
+    }
+
+    .places>* {
+        grid-column: 4 / span 6;
+    }
+
+}
+
+@media (min-width: 1050px) {
+    .navbar-links a {
+        font-size: 1.3rem;
+    }
+}
+
+/*******SPECIAL MEDIA QUERY FOR RESPONSIVE TABLES DISPLAY *********/
+
+/* Found this solution on https: //css-tricks.com/responsive-data-tables/ */
+
+@media (max-width: 500px) {
+
+    /* Change display of table */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 0.5em;
+    }
+
+    td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 30%;
+        font-size: 0.8em;
+    }
+
+    td:before {
+        /* Positions Headers to left of each td */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*  Labels for the data */
+    td:nth-of-type(1):before {
+        content: "Dept";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Name";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Title";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Email";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Phone";
+    }
+
+}
